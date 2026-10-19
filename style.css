@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: .25s;
+}
+body{
+    height: 100vh;
+    position: relative;
+}
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 50%;
+    height: 7%;
+    padding: 6px 26px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:0 0 16px 16px ;
+     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+    z-index: 2;
+}
+.logo{
+    height: 80%;
+    object-fit: contain;
+}
+a,button{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 21px;
+    cursor: pointer;
+}
+button{
+    border: 2px solid black;
+    background-color: white;
+    padding: 6px;
+    border-radius: 6px;
+}
+a:hover,button:hover{
+    scale: 1.1;
+}
+.brand-web{
+    color: white;
+    background-color: black;
+    padding: 10px 16px;
+    border-radius: 26px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+}
+section,main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+}
+label{
+    color: gray;
+}
+input,textarea{
+    border: 2px solid gray;
+    border-radius: 16px;
+    padding: 16px;  
+}
+input[type="text"],input[type="date"]{
+    direction: rtl;
+}
+footer{
+    
+    width: 50%;
+    height: 5%;
+    padding: 6px 26px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:16px 16px 0 0 ;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+}
+footer p{
+    color: gray;
+    font-weight: bold;
+}
+/* بداية الصفحة الرأيسية */
+.hero-section{
+    height: 94%;
+}
+.the-students{
+    height: 75%;
+    gap: 16px;
+}
+.student-info{
+    width: 75%;
+    height: 15%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.student-info span{
+    width: 25%;
+    padding: 16px 0;
+    font-size: 25px;
+}
+/* نهاية الصفحة الرأيسية */
+
+/* بداية صفحة من نحن */
+.about-us-section{
+    position: relative;
+    overflow-y: hidden;
+}
+.car-back{
+    position: absolute;
+    bottom: -50%;
+    width: 40%;
+    z-index: -1;
+}
+.about-info{
+    gap: 15%;
+    align-items: flex-end;
+    box-shadow: inset 0 -60px 80px -20px rgba(255, 255, 255, 0.85);
+}
+.about-info div{
+    width: 30%;
+    height: 5%;
+    padding: 16px;
+    margin-right: 26px;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+}
+.about-info div h2{
+    font-size: 40px;
+}
+.about-info div p,li{
+    font-size: 18px;
+}
+.contact{
+    flex-direction: row;
+}
+.contact-us{
+    width: 45%;
+    height: 75%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 26px;
+}
+.contact div h1{
+    font-size: 55px;
+}
+.contact div label{
+    font-size: 20px;
+}
+.contact div p{
+    font-size: 25px;
+}
+.leave-massge{
+    width: 50%;
+    height: 75%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 36px;
+}
+.leave-massge div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+.leave-massge a{
+    padding: 10px 36px ;
+}
+.leave-massge input{
+    width: 20%; 
+}
+.leave-massge textarea{
+    height: 40%;
+    width: 75%;
+}
+.contact ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px; 
+    background-color: black; 
+    border-radius: 50%; 
+    color: white; 
+    text-decoration: none;
+}
+.branches{
+    flex-direction: row;
+    height: 80%;
+}
+.our-branches{
+    width: 75%;
+    height: 100%;
+    padding: 16px;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.branches img{
+    width: 60%;
+    margin: 16px;
+    border: 2px solid gray;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+}
+/* نهاية صفحة من نحن */
+
+/* بداية صفحة السيارات */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+th {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.car-details{
+    display: none;
+}
+.details{
+    flex-direction: row;
+}
+.details p{
+    font-weight: bold;
+}
+.cars-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.booking-section{
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.booking-form{
+    position: relative;
+    width: 75%;
+    height: 75%;
+    flex-direction: column;
+    gap: 26px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.089);
+}
+.close-form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    border: none;
+    background-color: transparent;
+}
+.booking-form div{
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.booking-form div input{
+    width: 25% ;
+}
+/* نهاية صفحة السيارات */
